@@ -2,23 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Space Mono", serif;
+    font-family: "Space Mono", "serif";
 }
 
 :root {
-    --green-100: #f3f9fa;
+    --green-100:#f3f9fa;
     --green-200: #c5e4e7;
-    --gren-300: #9EBBBD;
-    --gren-400: #7F9D9F;
-    --gren-500: #5E7A7D;
-    --gren-600: #547878;
-    --gren-700: #3D6666;
-    --gren-800: #00474B;
+    --green-300: #9EBBBD;
+    --green-400: #7F9D9F;
+    --green-500: #5E7A7D;
+    --green-600: #547878;
+    --green-700: #3D6666;
+    --green-800: #00474B;
     --light-green: #26C2AE;
-    --white: #FFFFFF;
-    --green-hover: #9FE8DF;
+    --white: #ffffff;
+    --green-hover: #9FE8Df;
     --danger: #E17457;
-} 
+}
 
 body {
     background-color: var(--green-200);
@@ -38,14 +38,14 @@ main {
 
 .conta,
 .gorjeta,
-.pessoas{
+.pessoas {
     margin-bottom: 2rem;
 }
 
 .conta label,
 .gorjeta label,
 .pessoas label {
-    color: var(--gren-500);
+    color: var(--green-500);
     font-weight: 700;
 }
 
@@ -61,20 +61,20 @@ main {
 }
 
 .conta input,
-.pessoas input {
+.pessoas input{
     border: none;
     text-align: right;
     width: 100%;
     background: none;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--gren-800);
+    color: var(--green-800);
     outline: none;
 }
 
 .conta input::placeholder,
-.pessoas input::placeholder  {
-    color: var(--gren-300);
+.pessoas input::placeholder {
+    color: var(--green-300);
 }
 
 .conta:has(input:focus) div,
@@ -92,7 +92,7 @@ main {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:1rem;
+    gap: 1rem;
 }
 
 .gorjeta input {
@@ -103,16 +103,16 @@ main {
     outline: none;
     padding-block: 0.4rem;
     border-radius: 0.3125rem;
-    background-color: var(--gren-800);
+    background-color: var(--green-800);
     color: var(--white);
 }
 
 .gorjeta .botao-ativo {
     background-color: var(--light-green);
-    color: var(--gren-800);
+    color: var(--green-800);
 }
 
-.gorjeta input [type="button"]:hover,
+.gorjeta input[type="button"]:hover,
 .resultados button:hover {
     background-color:var(--green-hover) ;
     cursor: pointer;
@@ -121,11 +121,11 @@ main {
 .gorjeta #outra {
     width: 100%;
     background-color: var(--green-100);
-    color: var(--gren-800);
+    color: var(--green-800);
 }
 
 .gorjeta #outra::placeholder {
-    color: var(--gren-300);
+    color: var(--green-300);
 }
 
 .pessoas .textos {
@@ -134,19 +134,20 @@ main {
     justify-content: space-between;
 }
 
-.pessoas #erro-div{
-outline: 2px solid var(--danger);
+.pessoas #erro-div {
+    outline: 2px solid var(--danger);
 }
 
 .pessoas #erro {
     font-size: 0.75rem;
     color: var(--danger);
     font-weight: 700;
-    display:none;
+    display: none;
+   
 }
 
 .resultados {
-    background-color: var(--gren-800);
+    background-color: var(--green-800);
     border-radius: 0.9375rem;
     padding: 1.5rem;
 }
@@ -158,7 +159,7 @@ outline: 2px solid var(--danger);
 }
 
 .resultados p {
-    color: var(--gren-400);
+    color:var(--green-400);
     font-size: 0.8125rem;
 }
 
@@ -182,17 +183,18 @@ outline: 2px solid var(--danger);
 
 .resultados button {
     width: 100%;
-    background-color: var(--light-green);
+    background: var(--light-green);
     border: none;
     border-radius: 0.3125rem;
-    color: var(--gren-800);
-    font-weight: 700;
+    color: var(--green-800);
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 1.25rem;
     padding-block: 0.5rem;
+
 }
 
-.conta input::-webkit-inner-spin-button, 
+.conta input::-webkit-inner-spin-button,
 .pessoas input::-webkit-inner-spin-button,
 .gorjeta #outra::-webkit-inner-spin-button {
     display: none;
@@ -202,9 +204,9 @@ outline: 2px solid var(--danger);
     body {
         display: flex;
         flex-direction: column;
-        margin-inline: auto;
+        min-height:100svh ;
         justify-content: center;
-        gap: 5rem;  
+        gap: 5rem;
     }
 
     header {
@@ -232,8 +234,8 @@ outline: 2px solid var(--danger);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
-        padding: 2.5rem;
+
+        padding: 2.5rem;   
     }
 
     .resultados div > strong {
