@@ -8,7 +8,7 @@ function receberValorConta(evento) {
     conta = Number(evento.targert.value)
 }
 
-const pessoasInput = document.querySelector("#oessoa")
+const pessoasInput = document.querySelector("#poessoa")
 pessoasInput.addEventListener("input", receberQuantidadedePessoas)
 
 function receberQuantidadedePessoas(evento) {
@@ -23,4 +23,13 @@ function receberQuantidadedePessoas(evento) {
         divErro.setAttribute("id", "")
         pessoas = Number(evento.targert.value)
     }
+}
+
+const botoesGorjeta = document.querySelectorAll(".gorjeta input[type='button']")
+botoesGorjeta.forEach(botao => {
+    botao.addEventListener("click", receberPorcentagem)
+})
+
+function receberPorcentagem(evento) {
+    console.log(evento.targert.value)
 }
